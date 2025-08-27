@@ -1,4 +1,4 @@
-# leetcode-sql-50-solutions
+# Leetcode-sql-50-solutions
 My solutions &amp; explanations for LeetCode SQL-50
 # LeetCode SQL 50 — Solutions by Bhavya Nyati
 
@@ -25,3 +25,17 @@ Each `.sql` file follows this header
 -- Idea: <1-2 sentence approach>
 -- Solution: <actual SQL below>
 -- Explanation: <why it works / complexity / alternatives>
+
+Status
+
+-Problems solved: 50 / 50
+-Badge: LeetCode SQL 50 (added to resume)
+
+Notes
+
+-Problem statements are paraphrased to avoid copying full text.
+-Feedback and improvements welcome — suggestions will be added as alternate solutions.
+
+
+
+
