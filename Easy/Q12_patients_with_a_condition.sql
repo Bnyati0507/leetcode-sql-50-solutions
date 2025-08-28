@@ -1,5 +1,5 @@
 -- Title: Patients With a Condition
--- ID: Q11
+-- ID: Q12
 -- Difficulty: Easy
 -- Concepts: String pattern matching, LIKE operator
 -- Schema:
