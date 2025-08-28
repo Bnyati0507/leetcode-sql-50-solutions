@@ -1,5 +1,5 @@
 -- Title: Game Play Analysis IV
--- ID: Q06
+
 -- Difficulty: Medium
 -- Concepts: CTE, JOIN, DATEDIFF, Aggregates
 -- Schema:
