@@ -21,7 +21,7 @@
 ------------------------------------------------------------
 */
 
--- ✅ Solution (Using Window Functions, as you did)
+-- ✅ Solution (Using Window Functions)
 SELECT DISTINCT p.product_id,
        COALESCE(
          ROUND(
@@ -49,13 +49,5 @@ ORDER BY p.product_id;
 --
 -- 3. Use ROUND(..., 2) → round to 2 decimal places.
 -- 4. Use COALESCE(..., 0) → handle products with no sales (return 0).
---
--- ✅ Alternative (Simpler) Solution using GROUP BY:
--- SELECT p.product_id,
---        COALESCE(ROUND(SUM(p.price * u.units) / SUM(u.units), 2), 0) AS average_price
--- FROM Prices p
--- LEFT JOIN UnitsSold u
---       ON p.product_id = u.product_id
---      AND u.purchase_date BETWEEN p.start_date AND p.end_date
--- GROUP BY p.product_id;
+ 
 ------------------------------------------------------------
