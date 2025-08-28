@@ -22,7 +22,7 @@
 ------------------------------------------------------------
 */
 
--- ✅ Solution (Using Window Functions, your version)
+-- ✅ Solution (Using Window Functions)
 SELECT DISTINCT query_name,
        ROUND(AVG(rating / position) OVER (PARTITION BY query_name), 2) AS quality,
        ROUND(
@@ -41,11 +41,4 @@ FROM Queries;
 -- 3. DISTINCT is needed because window functions return 
 --    multiple rows per query_name otherwise.
 
-------------------------------------------------------------
--- ✅ Alternative Solution (Cleaner with GROUP BY)
-SELECT query_name,
-       ROUND(AVG(rating * 1.0 / position), 2) AS quality,
-       ROUND(SUM(CASE WHEN rating < 3 THEN 1 ELSE 0 END) * 100.0 / COUNT(*), 2) AS poor_query_percentage
-FROM Queries
-GROUP BY query_name;
 ------------------------------------------------------------
