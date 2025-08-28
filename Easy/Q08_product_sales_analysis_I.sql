@@ -1,5 +1,5 @@
 -- Title: Product Sales Analysis I
--- ID: Q07
+-- ID: Q08
 -- Difficulty: Easy
 -- Concepts: INNER JOIN
 -- Schema:
