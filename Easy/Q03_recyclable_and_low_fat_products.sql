@@ -1,5 +1,5 @@
 -- Title: Recyclable and Low Fat Products
--- ID: Q01
+-- ID: Q03
 -- Difficulty: Easy
 -- Concepts: Filtering, WHERE clause
 -- Schema:
