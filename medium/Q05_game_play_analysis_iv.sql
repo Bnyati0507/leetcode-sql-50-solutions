@@ -1,5 +1,4 @@
 -- Title: Game Play Analysis IV
-
 -- Difficulty: Medium
 -- Concepts: CTE, JOIN, DATEDIFF, Aggregates
 -- Schema:
