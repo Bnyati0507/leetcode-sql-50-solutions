@@ -1,25 +1,29 @@
--- Title: Number of Unique Subjects Taught by Each Teacher
--- ID: Q16
--- Difficulty: Easy
--- Concepts: GROUP BY, COUNT(DISTINCT)
--- Schema:
---   Teacher(teacher_id INT, subject_id INT, dept_id INT)
---     (Each row indicates a teacher teaches a subject in a department.)
--- Problem (paraphrased):
---   - For each teacher, count how many unique subjects they teach (across all departments).
---   - Return teacher_id and the count of distinct subjects.
+/*
+------------------------------------------------------------
+ Title      : Number of Unique Subjects Taught by Each Teacher
+ Platform   : LeetCode (SQL 50)
+ Difficulty : Easy
+ Schema     :
+   Teacher(teacher_id INT, subject_id INT, dept_id INT)
+ Concepts   : GROUP BY, COUNT(DISTINCT), Aggregation
+------------------------------------------------------------
 
--- Solution:
-SELECT
-  teacher_id,
-  COUNT(DISTINCT subject_id) AS cnt
+ 📝 Problem:
+ Write an SQL query to report the number of unique subjects each teacher teaches.
+
+ Return result table in any order.
+------------------------------------------------------------
+*/
+
+-- ✅ Solution
+SELECT teacher_id,
+       COUNT(DISTINCT subject_id) AS cnt
 FROM Teacher
 GROUP BY teacher_id;
 
--- Explanation:
--- 1. GROUP BY teacher_id → allows aggregation per teacher.
--- 2. COUNT(DISTINCT subject_id) → counts unique subject IDs per teacher.
--- 3. We return teacher_id and cnt (number of unique subjects).
-
--- Note:
--- DEPT_ID is ignored because we only care about unique subjects, regardless of department.
+------------------------------------------------------------
+-- 💡 Explanation:
+-- 1. Group rows by teacher_id → one row per teacher.
+-- 2. Use COUNT(DISTINCT subject_id) → avoid duplicate subjects.
+-- 3. Output = number of unique subjects taught per teacher.
+------------------------------------------------------------
