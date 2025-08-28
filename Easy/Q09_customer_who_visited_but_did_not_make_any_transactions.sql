@@ -1,5 +1,5 @@
 -- Title: Customer Who Visited but Did Not Make Any Transactions
--- ID: Q08
+-- ID: Q09
 -- Difficulty: Easy
 -- Concepts: LEFT JOIN, NULL filtering, GROUP BY
 -- Schema:
