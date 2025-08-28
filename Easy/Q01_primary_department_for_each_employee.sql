@@ -1,5 +1,5 @@
 -- Title: Primary Department for Each Employee
--- ID: Q07
+-- ID: Q01
 -- Difficulty: Easy
 -- Concepts: Filtering, UNION, NOT IN
 -- Schema:
