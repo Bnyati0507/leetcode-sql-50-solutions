@@ -1,5 +1,5 @@
 -- Title: Percentage of Users Attended a Contest
--- ID: Q12
+-- ID: Q13
 -- Difficulty: Easy
 -- Concepts: Window functions, Aggregation, Percentage calculation
 -- Schema:
